@@ -1,0 +1,16 @@
+body{
+    background-color: bisque;
+    padding:10px;
+  margin:5px ;
+}
+header{
+    background-color: bisque;
+
+}
+header ul li {
+    color: black;
+    list-style: none;
+}
+header ul li a{
+    color:black;
+}
