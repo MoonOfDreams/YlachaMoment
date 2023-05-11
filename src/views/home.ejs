@@ -2,16 +2,23 @@
 <html lang="es">
 <%- include("partials/head") %>
 
-<body>
-  <%- include("partials/header") %>
-  <main class="home">
-    <p class="titulo">
-      Hola, esta soy yo Hoy:
-    </p>
-    <video width="90%" height="50%" src="video/ylachaAct.mp4" controls autoplay="" loop=""></video>
-    <p> pero para esto falto mucho trabajo,acompañame y ve mi historia</p>
-    <a href="/entrada"></a>
-  </main>
-  <%- include("partials/footer") %>
-</body>
+  <body>
+    <%- include("partials/header") %>
+      <main class="home">
+        <p class="titulo">
+          Hola, esta soy yo Hoy:
+        </p>
+        <video controls muted autoplay="" loop=""src="video/ylachaAct.mp4"> </video>
+        <p> pero para esto falto mucho trabajo,acompañame y ve mi historia</p>
+        <p>Esta es una de esas paginas que nace y se hace desde el amor, asi que tenemos opciones como adoptar, donar y
+          subir porque no un momento ylacha,
+          una foto o video de algun animal que queieras dar en adopcion para que tomemos conciencia de que ellos no son
+          un juguete ni menos una cosa.
+        </p>
+
+        <a href="/entrada"></a>
+      </main>
+      <%- include("partials/footer") %>
+  </body>
+
 </html>
