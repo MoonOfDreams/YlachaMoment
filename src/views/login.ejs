@@ -1,20 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<%- include("partials/head") %><!doctype html>
+  <%- include("partials/head") %><!DOCTYPE html>
 
-<body>
-<%- include("partials/header") %>
-<main>
-<form action="/" method=POST>
-    <label for="nombre"> ingresa tu nombre:</label>
-    <input type="text" name="nombre">
-    
-    <label for="email">Correo electrónico:</label>
-    <input type="email"  name="email">
-    <input type="checkbox"  name="remember" value="true">
-    <label for="remember">Recordarme</label><br>
-  
-    <input type="submit" value="Enviar">
-  </form>
-</main>
-</body>
+  <body>
+    <%- include("partials/header") %>
+    <main>
+      <form action="/" method="POST">
+        <label for="nombre"> ingresa tu nombre:</label>
+        <input type="text" name="nombre" />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" name="email" />
+        <input type="checkbox" name="remember" value="true" />
+        <label for="remember">Recordarme</label><br />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </main>
+  </body>
+</html>

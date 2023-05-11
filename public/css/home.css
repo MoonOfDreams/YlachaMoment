@@ -1,123 +1,113 @@
-
-body{
-    background-color: bisque;
-   padding: 10px;
-   align-items: center;
-  
+body {
+  background-color: bisque;
+  padding: 10px;
+  align-items: center;
 }
-p{
-    text-align: center;
+p {
+  text-align: center;
 }
 
-header{
-    background-color: bisque;
-display: flex;
-flex-direction: column;
-padding: 8px;
-
-} 
-header div.header{
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-evenly
+header {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
 }
-header div.header img{
-width: 60px;
-height: 60px
+header div.header {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
-header div.header div.search{
-    gap: 1px;
-    font-size: 14px;
-    align-items: center;
-    
+header div.header img {
+  width: 60px;
+  height: 60px;
 }
-header div.header div.search input{
-width: 90%;
-    background-color: beige;
+header div.header div.search {
+  gap: 1px;
+  font-size: 14px;
+  align-items: center;
+}
+header div.header div.search input {
+  width: 90%;
+  background-color: beige;
 }
 
-header div.header div.prueba{
-    display: flex;
-    flex-direction: row; 
-    gap: 5px;
+header div.header div.prueba {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 }
-header div.header div.prueba2{
-display: flex;
-flex-direction: column;
-gap: 5px;
-}
-
-header div.header div.prueba div.register_login{
-    display:flex;
-gap: 5px;
-align-items: center;
-flex-direction: row;
-justify-content:space-between;
-
+header div.header div.prueba2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-header div.header div.prueba  div.register_login button{
-font-size:15px;
-border: 1px solid ;
-border-radius: 5px;
-background-color: beige;
+header div.header div.prueba div.register_login {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
- main video{
-    width: 250px;
-    height: 200px;
-     margin-left: 15px;
-}
- main form{
-display: flex;
-flex-direction: column;
-gap: 5px;
-}
-main form h1{
-    font-size: 15px;
-}
-main form button{
-        width: 100%;
-        background-color: bisque;
+header div.header div.prueba div.register_login button {
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: beige;
 }
 
-
-footer{
-    margin-top: 15px;
-    padding: 15px;
-background-color: bisque;
-font-size: 14px;
+main video {
+  width: 250px;
+  height: 200px;
+  margin-left: 15px;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+main form h1 {
+  font-size: 15px;
+}
+main form button {
+  width: 100%;
+  background-color: bisque;
 }
 
-footer div.lista{ 
-    display: flex;
-    flex-direction: column;
-
+footer {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: bisque;
+  font-size: 14px;
 }
 
-
-footer div.lista ul{
-    list-style: none;
-    gap: 5px;
-
+footer div.lista {
+  display: flex;
+  flex-direction: column;
 }
-footer div.lista ul li a{
-color:black;
-text-decoration:none;
-display: flex;
-font-size: 14px;
-list-style: none;gap: 5px;
-} 
 
+footer div.lista ul {
+  list-style: none;
+  gap: 5px;
+}
+footer div.lista ul li a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  font-size: 14px;
+  list-style: none;
+  gap: 5px;
+}
 
-footer div.lista ul.menu li i{
-    border: 1px solid gray;
-        border-radius: 50%;
-        padding: 3px;
-    
+footer div.lista ul.menu li i {
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 3px;
 }
 footer div.lista h1 {
-font-size: 15px;
+  font-size: 15px;
 }

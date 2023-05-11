@@ -1,27 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<%- include("partials/head") %>
-<body>               
-<%- include("partials/header") %> 
-<main> 
-  <form action="/" method=POST>
-  <h1>¡Bienvenido a Ylacha Moment!</h1>
-    <label for="nombre"> ingresa tu nombre:</label>
-    <input type="text"  name="nombre">
-  <label for="apellido">ingresa tu apellido:</label>
-  <input type="text" name="apellido">
-    <label for="email">Correo electrónico:</label>
-    <input type="email"  name="email">
-    <label for="password">ingresa tu contraseña:</label>
-    <input type="password" name="password">
-<label for="avatar">ingresa tu avatar:</label>
-<input type="file" name="avatar">
-<label for="date"> ingresa tu fecha de nacimiento</label>
-    <input type="date" name="date">
-    <button type="submit" >registrarme</button>
-  </form>
-</main>
+  <%- include("partials/head") %>
+  <body>
+    <%- include("partials/header") %>
+    <main>
+      <form action="/" method="POST">
+        <h1>¡Bienvenido a Ylacha Moment!</h1>
+        <label for="nombre"> ingresa tu nombre:</label>
+        <input type="text" name="nombre" />
+        <label for="apellido">ingresa tu apellido:</label>
+        <input type="text" name="apellido" />
+        <label for="email">Correo electrónico:</label>
+        <input type="email" name="email" />
+        <label for="password">ingresa tu contraseña:</label>
+        <input type="password" name="password" />
+        <label for="avatar">ingresa tu avatar:</label>
+        <input type="file" name="avatar" />
+        <label for="date"> ingresa tu fecha de nacimiento</label>
+        <input type="date" name="date" />
+        <button type="submit">registrarme</button>
+      </form>
+    </main>
 
-<%- include("partials/footer") %>
-
-</body>
+    <%- include("partials/footer") %>
+  </body>
+</html>
