@@ -1,0 +1,63 @@
+main.adopta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main.adopta h1 {
+  font-size: 15px;
+  text-align: center;
+}
+
+main.adopta article img {
+  width: 90%;
+  display: flex;
+  height: 250px;
+}
+main.adopta div.carousel-item.active {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+main.adopta article {
+  width: 90%;
+  box-shadow: 5px 5px 10px rgb(177, 148, 113);
+  border-radius: 10px;
+  border-style: inset;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+main.adopta article img {
+  width: 95%;
+  display: flex;
+}
+main.adopta div.carousel-item div.iconos {
+  font-size: 16px;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 3px;
+  display: flex;
+  text-align: center;
+}
+main.adopta div.carousel-item div.iconos button {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 481px) {
+  main.adopta article {
+    width: 80%;
+    height: 50%;
+  }
+  main.adopta div.carousel-item div.iconos {
+    gap: 10px;
+    width: 100%;
+  }
+
+  main.adopta div.carousel-item div.iconos button {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+}

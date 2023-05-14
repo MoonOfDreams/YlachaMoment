@@ -1,0 +1,28 @@
+ @import url("home.css");
+ @import url("footer.css");
+ @import url("header.css");
+ @import url("register.css");
+ @import url("login.css");
+ @import url("adopta.css");
+ @import url("tarjeta.css");
+ body {
+    background-color: bisque;
+    align-items: center;
+  }
+  p {
+    text-align: center;
+  }
+ main a{
+  color:black
+ }
+  a i{
+    color: rgb(255, 141, 2);
+}
+
+
+main button{
+  border-radius: 15px;
+  background-color: bisque;
+  border: 1px solid rgba(255, 141, 3, 0.918);
+
+}

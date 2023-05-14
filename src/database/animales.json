@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "name":"Benji",
+    "image": "Benji.jpg",
+    "type": "perrita de 8 años",
+    "sexo": "hembra",
+    "refugio":"pamelita",
+    "historia": "la encontramos cuando estaba preñada a dias de dar a luz, sus cachorros murieron en el parto, pero, se recupero, la castramos y vive como una reyna"
+  },
+  {
+    "id": 2,
+    "name": "Lola",
+    "image": "bonita.jpg",
+    "type": "perrita de 9 meses",
+    "sexo": "hembra",
+    "refugio":"las tres hermanas",
+        "descripcion": "enorme cuerpo con alma de caniche",
+    "historia": "encontrada vagando sin rumbo,laastimada, fue curada y castrada,ahora vive llena de amor"
+  },
+  {
+    "id": 3,
+    "name":"Bombon",
+    "image": "flaca.jpg",
+    "type": "perrita de 5 años",
+    "sexo": "hembra",
+    "refugio":"las renatas",
+    "descripcion": "guerrera de la vida",
+    "historia": "rescatada de un vecino que no la queria y la maltrataba, nos la dio despues de mucha lucha"
+  }
+]

@@ -1,1 +1,34 @@
+
+  main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+     gap: 5px;
+    align-items: center;
+  }
  
+  main form h1 {
+    font-size: 15px;
+  }
+  main form button {
+    
+    background-color: bisque;
+  }
+main form div.register,main form div.avatar, main form div.date{
+
+    width: 59%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  }
+main form div.recordarme{
+  display: flex;
+  flex-direction: column
+}
+@media(min-width:768px){
+
+  main form{
+    width: 100%;
+  }
+}
