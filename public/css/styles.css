@@ -4,6 +4,7 @@
  @import url("register.css");
  @import url("login.css");
  @import url("adopta.css");
+ @import url("entrada.css");
  @import url("tarjeta.css");
  body {
     background-color: bisque;

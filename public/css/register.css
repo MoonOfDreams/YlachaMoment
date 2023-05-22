@@ -1,34 +1,32 @@
+main.register form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  gap: 5px;
+  align-items: center;
+}
 
-  main form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 95%;
-     gap: 5px;
-    align-items: center;
-  }
- 
-  main form h1 {
-    font-size: 15px;
-  }
-  main form button {
-    
-    background-color: bisque;
-  }
-main form div.register,main form div.avatar, main form div.date{
-
-    width: 59%;
+main.register form h1 {
+  font-size: 15px;
+}
+main.register form button {
+  background-color: bisque;
+}
+main.register form div.register,
+main.register form div.avatar,
+main.register form div.date {
+  width: 59%;
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
-  }
-main form div.recordarme{
-  display: flex;
-  flex-direction: column
 }
-@media(min-width:768px){
-
-  main form{
+main.register form div.recordarme {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  main.register form {
     width: 100%;
   }
 }

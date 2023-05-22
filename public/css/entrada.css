@@ -1,0 +1,74 @@
+main.entrada {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main.entrada > h2 {
+  font-size: 14px;
+  text-align: center;
+}
+
+main.entrada form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 700px;
+}
+
+main.entrada form > * {
+  width: 100%;
+}
+
+main.entrada form .input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px rgb(238, 207, 169);
+  padding: 5px;
+}
+
+main.entrada form #story {
+  resize: none;
+}
+
+main.entrada form .images {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+main.entrada form .images .image {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+}
+
+main.entrada form .images .image * {
+  width: 140px;
+}
+main.entrada form .images .image img {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 140px;
+}
+main.entrada form .images .image input {
+  display: none;
+}
+main.entrada form .images .image label {
+  display: block;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+  width: 100%;
+}
+
+main.entrada form .images .image label:hover {
+  background-color: rgb(213, 213, 213);
+}
+
+main.entrada form .management {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
