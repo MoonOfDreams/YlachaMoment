@@ -3,6 +3,58 @@
   <%- include("partials/head") %>
 
   <body>
-    <%- include("partials/header") %> <%- include("partials/footer") %>
+    <%- include("partials/header") %>
+    <main class="entrada">
+      <h2>Contanos tu momento Ylacha e inspira a otros</h2>
+      <form action="">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="input"
+          placeholder="Nombre"
+        />
+        <textarea
+          name="story"
+          id="story"
+          cols="30"
+          rows="10"
+          class="input"
+          placeholder="Historia"
+        ></textarea>
+        <div class="images">
+          <div class="image">
+            <img src="" alt="" id="beforePhoto" />
+            <input
+              type="file"
+              name="beforePhotoInput"
+              id="beforePhotoInput"
+              onchange="loadImage(this,'beforePhoto')"
+            />
+            <label for="beforePhotoInput">Foto antes</label>
+          </div>
+          <div class="image">
+            <img src="" alt="" id="afterPhoto" />
+            <input
+              type="file"
+              name="afterPhotoInput"
+              id="afterPhotoInput"
+              onchange="loadImage(this,'afterPhoto')"
+            />
+            <label for="afterPhotoInput">Foto despues</label>
+          </div>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="forAdoption" id="forAdoption" />
+          <label for="forAdoption">¿Está en adopción?</label>
+        </div>
+        <div class="management">
+          <button type="reset">Reiniciar</button>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </main>
+    <%- include("partials/footer") %>
+    <script src="/js/entrada.js"></script>
   </body>
 </html>
