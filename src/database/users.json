@@ -1,0 +1,24 @@
+[
+  {
+    "nombre": " Ro ",
+    "apellido": "vazquez",
+    "email": "ro@belen.com",
+    "password": "quieroDormir",
+    "date": ""
+  },
+  {
+    "nombre": "FELI",
+    "apellido": "gil",
+    "email": "feliblockazo@medebes.com",
+    "password": "blockazo",
+    "date": "2001-03-07"
+  },
+  {
+    "nombre": "Cosme",
+    "apellido": "Fulanito",
+    "email": "cosme@fulanito.com",
+    "password": "GILAQUESOSWAPA",
+    "date": "5200-03-07"
+  }
+ 
+]

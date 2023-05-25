@@ -5,12 +5,12 @@
   <body>
     <%- include("partials/header") %>
     <main>
-      <form class="login" action="/" method="POST">
-        <label for="nombre"> ingresa tu email</label>
-        <input type="text" name="nombre" />
+      <form class="login" action="/login" method="POST">
+        <label for="email"> ingresa tu email</label>
+        <input type="email" name="email" id="email"/>
 
-        <label for="email">ingresa tu contraseña</label>
-        <input type="email" name="email" />
+        <label for="password">ingresa tu contraseña</label>
+        <input type="password" name="password" id="password"/>
         <div class="Recordarme"><input type="checkbox" name="remember" value="true" />
         <label for="remember">Recordarme</label><br /></div>
 

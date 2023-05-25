@@ -9,7 +9,9 @@ router.get("/detalleMascota", controllers.detalleMascota);
 router.get("/dona", controllers.dona);
 router.get("/entrada", controllers.entrada);
 router.get("/login", controllers.login);
+router.post("/login", controllers.loguearse);
 router.get("/register", controllers.register);
+router.post("/register", controllers.crearUsuario);
 router.get("/procesoAdopcion", controllers.procesoAdopcion);
 router.get("/nuestraYlacha", controllers.nuestraYlacha);
 
