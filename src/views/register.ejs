@@ -4,24 +4,69 @@
   <body>
     <%- include("partials/header") %>
     <main class="register">
-      <form class="register" action="/" method="POST">
+      <form
+        class="register"
+        action="/register"
+        method="POST"
+        enctype="multipart/form-data"
+      >
         <h1>¡Bienvenido a Ylacha Moment!</h1>
-       <div class="register"><label for="nombre"> ingresa tu nombre:</label>
-        <input type="text" name="nombre" />
-        <label for="apellido">ingresa tu apellido:</label>
-        <input type="text" name="apellido" />
-        <label for="email">Correo electrónico:</label>
-        <input type="email" name="email" />
-        <label for="password">ingresa tu contraseña:</label>
-        <input type="password" name="password" /></div>
-       <div class="avatar">  <label for="avatar">ingresa tu avatar:</label>
-       <input  type="file" name="avatar" /></div>
-       <div class="date"><label  for="date"> ingresa tu fecha de nacimiento</label>
-        <input type="date" name="date" /></div>
+        <div class="register">
+          <label for="nombre"> ingresa tu nombre:</label>
+          <input  type="text"class= "form-control"
+         
+           
+           value="<%= locals.old && old.nombre?old.nombre:"" %>" name="nombre" id="nombre" />
+          
+           <% if (locals. mensajeDeError &&
+          mensajeDeError.nombre ) { %>
+          <p class="error" id="error"><%- mensajeDeError.nombre.msg %></p>
+          <% } %>
+          <label for="apellido">ingresa tu apellido:</label>
+          <input type="text"
+           name="apellido" id="apellido"  value="<%= locals.old && old.apellido?old.apellido:"" %>" 
+       
+           class= "form-control "/>
+          
+           <% if (locals.mensajeDeError
+          && mensajeDeError.apellido ) { %>
+          <p class="error"id="error"><%- mensajeDeError.apellido.msg %></p>
+
+          <% } %>
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email"
+           name="email" id="email"
+           class= "form-control"
+           value="<%= locals.old && old.email?old.email:"" %>"/> 
+            
+            <% if (locals.mensajeDeError &&
+          mensajeDeError.email ) { %>
+          <p class="error"id="error"><%- mensajeDeError.email.msg %></p>
+          <% } %>
+          <label for="password">ingresa tu contraseña:</label>
+          <input type="password" id="password"  class= "form-control " name="password"/> <% if
+          (locals.mensajeDeError && mensajeDeError.password ) { %>
+          <p class="error"id="error"><%- mensajeDeError.password.msg %></p>
+          <% } %>
+        </div>
+        <div class="avatar">
+          <label for="avatar">ingresa tu avatar:</label>
+          <input type="file" name="avatar" id="avatar" value="<%= locals.old &&
+          old.avatar?old.avatar:"" %>" /> <% if (locals.mensajeDeError &&
+          mensajeDeError.avatar ) { %>
+          <p class="error"id="error"><%- mensajeDeError.avatar.msg %></p>
+          <% } %>
+        </div>
+        <div class="date">
+          <label for="date"> ingresa tu fecha de nacimiento</label>
+          <input type="date" id="date" name="date" value="<%= locals.old &&
+          old.date?old.date:"" %>"/>
+        </div>
         <button type="submit">registrarme</button>
       </form>
     </main>
-
+<script src="/js/validaciones.js"></script>
     <%- include("partials/footer") %>
   </body>
 </html>

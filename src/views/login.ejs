@@ -6,13 +6,20 @@
     <%- include("partials/header") %>
     <main>
       <form class="login" action="/login" method="POST">
-        <label for="email"> ingresa tu email</label>
-        <input type="email" name="email" id="email"/>
-
-        <label for="password">ingresa tu contraseña</label>
-        <input type="password" name="password" id="password"/>
-        <div class="Recordarme"><input type="checkbox" name="remember" value="true" />
-        <label for="remember">Recordarme</label><br /></div>
+        <label for="email">Correo electrónico:</label>
+        <input type="email"
+         name="email" 
+         value="<%= locals.old && old.email?old.email:"" %>"
+          /> 
+          <% if (locals.mensajeDeError &&
+        mensajeDeError.email ) { %>
+        <p class="error"><%- mensajeDeError.email.msg %></p>
+        <% } %>
+        <label for="password">ingresa tu contraseña:</label>
+        <input type="password" name="password"/> <% if
+        (locals.mensajeDeError && mensajeDeError.password ) { %>
+        <p class="error"><%- mensajeDeError.password.msg %></p>
+        <% } %>
 
         <button type="submit" value="Enviar" >iniciar sesión</button>
       </form>

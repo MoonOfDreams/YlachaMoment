@@ -1,4 +1,10 @@
-main.register form {
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main.register form,
+main form.login {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,8 +12,13 @@ main.register form {
   gap: 5px;
   align-items: center;
 }
-
-main.register form h1 {
+main form.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main.register form h1,
+main form.login {
   font-size: 15px;
 }
 main.register form button {
@@ -15,18 +26,21 @@ main.register form button {
 }
 main.register form div.register,
 main.register form div.avatar,
-main.register form div.date {
+main.register form div.date,
+main form.login {
   width: 59%;
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
 }
-main.register form div.recordarme {
+main.register form div.recordarme,
+main form.login {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 768px) {
-  main.register form {
+  main.register form,
+  main form.login {
     width: 100%;
   }
 }

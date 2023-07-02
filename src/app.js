@@ -1,10 +1,17 @@
 const express = require("express");
 const app = express();
+const router =require("./routers/mainRouters.js");
 const path = require("path");
+const session=require("express-session")
 app.use(express.static("public"));
-app.use(express.json())
+
 app.use(express.urlencoded({extended:false}))
-const router = require("./routers/mainRouters.js");
+app.use(express.json())
+app.use(express.static("public"))
+app.use(session({ secret:"Ylacha Moment",
+resave: false, //por cada req ala server ssee reinnicia la session cookie
+saveUninitialized: true //  si es falsa,la session cookie no se guarda hasta que se modifique logueandose
+}))
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "./views"));
 app.use(router);

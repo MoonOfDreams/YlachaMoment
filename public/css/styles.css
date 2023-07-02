@@ -7,11 +7,15 @@
  @import url("entrada.css");
  @import url("tarjeta.css");
  body {
-    background-color: bisque;
     align-items: center;
   }
   p {
     text-align: center;
+  }
+  p.error {
+    text-align: center;
+   color: red;
+   font-size: 14px;
   }
  main a{
   color:black
