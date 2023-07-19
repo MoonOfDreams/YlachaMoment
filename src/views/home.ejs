@@ -5,24 +5,29 @@
   <body>
     <%- include("partials/header") %>
     <main class="home">
-      <p class="titulo">Hola, esta soy yo Hoy:</p>
-      <video
-        controls
-        muted
-        autoplay=""
-        loop=""
-        src="video/ylachaAct.mp4"
-      ></video>
-      <p>pero para esto falto mucho trabajo,acompañame y ve mi historia</p>
+      <p class="titulo">
+        "El unico amor que cambia es el que se involucra y lucha por el
+        bienestar del otro"
+      </p>
+      <div class="image">
+        <img src="img/primeraYlacha.jpg" />
+        <img src="img/ylachaFinal.jpg" />
+      </div>
+
       <p>
         Esta es una de esas paginas que nace y se hace desde el amor, asi que
-        tenemos opciones como adoptar, donar y subir porque no un momento
-        ylacha, una foto o video de algun animal que queieras dar en adopcion
-        para que tomemos conciencia de que ellos no son un juguete ni menos una
-        cosa.
+        tenemos opciones como adoptar, donar y subir un momento ylacha, una foto
+        e algun animal que quieras dar en adopcion para que tomemos
+        conciencia de que ellos no son un juguete ni menos una cosa.
       </p>
-
-      <a href="/entrada"></a>
+      <p>Pero,para esto falto mucho trabajo,acompañame y ve mi historia.</p>
+      <div class="button">
+        <button><a href="/nuestraYlacha" class="button-style"><i class="fa-solid fa-book"></i><span> Conocer mi historia</span> <i class="fa-solid fa-book"></i></a></button>
+        <button><a href="/entrada" class="button-style"><i class="fa-solid fa-bone"></i><span>Conta tu momento ylacha</span> <i class="fa-solid fa-bone"></i></a></button>
+        <button>
+          <a href="/procesoAdopcion" class="button-style"><i class="fa-solid fa-paw"></i><span>Conoce el proceso de adopción</span> <i class="fa-solid fa-paw"></i></a>
+        </button>
+      </div>
     </main>
     <%- include("partials/footer") %>
   </body>

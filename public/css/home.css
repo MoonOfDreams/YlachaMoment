@@ -3,17 +3,50 @@ main.home{
   justify-content:center;
   flex-direction: column;
 }
-main video {
-  width: 250px;
-  height: 200px;
-  margin-left: 15px;
+main.home div.image{
+  display:flex;
+  gap: 5px;
+  padding: 10px;
+  align-items: center;
+} 
+main.home .image img{
+  width:50%;
+  max-width:300px;
+  aspect-ratio:1/1; 
+}
+main.home div.button{
+  gap: 5px;
   display: flex;
-  justify-content: center;
-
+  flex-direction: column;
+  width: 100%;
+  padding: 7px;
+  align-items:stretch;
+}
+main.home div.button button a{
+  display: grid;
+  grid-template-columns: 29px auto 29px;
+}
+main.home div.button button {
+  height: 40px;
+  padding: 0 9px;
 }
 
+@media (min-width:481px) {
+  main.home div.button button {
+    padding: 0 20px;
+  }
+  
+}
 
+@media(min-width:768px){
+ main.home div.image{
+  width: 40%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+}
 
+} 
 
 
 
