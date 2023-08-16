@@ -1,43 +1,69 @@
- @import url("home.css");
- @import url("footer.css");
- @import url("header.css");
- @import url("register.css");
- @import url("login.css");
- @import url("adopta.css");
- @import url("entrada.css");
- @import url("tarjeta.css");
- body {
-    min-height: 100vh       ;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
-  }
-  p {
-    text-align: center;
-    padding-left:5px;
-    padding-right: 5px;
-  }
-  p.error {
-    text-align: center;
-   color: red;
-   font-size: 14px;
-  }
- main a{
-  color:black
- }
-  a i{
-    color: rgb(255, 141, 2);
-    border-radius: 50%;
-  padding: 5px;
-border:1px solid rgb(255, 141, 2);
+@import url("home.css");
+@import url("footer.css");
+@import url("header.css");
+@import url("register.css");
+@import url("contacto.css");
+@import url("carousel.css");
+@import url("login.css");
+@import url("entrada.css");
+@import url("tarjetas.css");
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: rgba(255, 247, 237, 0.856);
 }
 
+p {
+  text-align: center;
+}
+p.error {
+  text-align: center;
+  color: red;
+  font-size: 14px;
+}
 
+p.importante {
+  width: 100%;
+  overflow: hidden;
+  height: 50px;
+}
+h5.importante {
+  color: rgb(255, 141, 2);
+  font-size: 1.5rem;
+}
 
-main button{
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(255, 141, 2);
+  text-decoration: none;
+}
+
+a i {
+  color: rgb(255, 141, 2);
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid rgb(255, 141, 2);
+}
+i {
+  color: rgb(255, 141, 2);
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid rgb(255, 141, 2);
+}
+
+button {
   border-radius: 15px;
+  padding: 5px;
   background-color: bisque;
   border: 1px solid rgba(255, 141, 3, 0.918);
+}
 
+button:hover {
+  color: rgba(255, 141, 3, 0.918);
 }

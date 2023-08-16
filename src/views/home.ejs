@@ -4,11 +4,16 @@
 
   <body>
     <%- include("partials/header") %>
-    <main class="home">
-      <p class="titulo">
+    <main>
+      <h4>
+        <% if (locals.user&& user.genero) { %> <%=user.genero=="Mujer"?
+        "Bienvenida":"Bienvenido" %> <%= user.nombre %> <%} else{ %> holi <% }
+        %>
+      </h4>
+      <h6>
         "El unico amor que cambia es el que se involucra y lucha por el
-        bienestar del otro"
-      </p>
+        bienestar del otro."
+      </h6>
       <div class="image">
         <img src="img/primeraYlacha.jpg" />
         <img src="img/ylachaFinal.jpg" />
@@ -17,17 +22,33 @@
       <p>
         Esta es una de esas paginas que nace y se hace desde el amor, asi que
         tenemos opciones como adoptar, donar y subir un momento ylacha, una foto
-        e algun animal que quieras dar en adopcion para que tomemos
-        conciencia de que ellos no son un juguete ni menos una cosa.
+        e algun animal que quieras dar en adopcion para que tomemos conciencia
+        de que ellos no son un juguete ni menos una cosa.
       </p>
-      <p>Pero,para esto falto mucho trabajo,acompañame y ve mi historia.</p>
       <div class="button">
-        <button><a href="/nuestraYlacha" class="button-style"><i class="fa-solid fa-book"></i><span> Conocer mi historia</span> <i class="fa-solid fa-book"></i></a></button>
-        <button><a href="/entrada" class="button-style"><i class="fa-solid fa-bone"></i><span>Conta tu momento ylacha</span> <i class="fa-solid fa-bone"></i></a></button>
         <button>
-          <a href="/procesoAdopcion" class="button-style"><i class="fa-solid fa-paw"></i><span>Conoce el proceso de adopción</span> <i class="fa-solid fa-paw"></i></a>
+          <a href="/nuestraYlacha" class="button-style"
+            ><i class="fa-solid fa-book"></i><span> Conocer mi historia</span>
+            <i class="fa-solid fa-book"></i
+          ></a>
+        </button>
+        <button>
+          <a href="/entrada" class="button-style"
+            ><i class="fa-solid fa-bone"></i
+            ><span>Conta tu momento ylacha</span>
+            <i class="fa-solid fa-bone"></i
+          ></a>
+        </button>
+        <button>
+          <a href="/procesoAdopcion" class="button-style"
+            ><i class="fa-solid fa-paw"></i
+            ><span>Conoce el proceso de adopción</span>
+            <i class="fa-solid fa-paw"></i
+          ></a>
         </button>
       </div>
+      <h5>Te presento al proximo amor de tu vida:</h5>
+      <%- include("partials/carousel") %> <%- include("partials/tarjetas") %>
     </main>
     <%- include("partials/footer") %>
   </body>

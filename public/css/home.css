@@ -1,20 +1,21 @@
-main.home{
+main{
   display: flex;
+  align-items: center;
   justify-content:center;
   flex-direction: column;
 }
-main.home div.image{
+main div.image{
   display:flex;
   gap: 5px;
   padding: 10px;
-  align-items: center;
+  justify-content: center;
 } 
-main.home .image img{
+main .image img{
   width:50%;
   max-width:300px;
   aspect-ratio:1/1; 
 }
-main.home div.button{
+main div.button{
   gap: 5px;
   display: flex;
   flex-direction: column;
@@ -22,32 +23,132 @@ main.home div.button{
   padding: 7px;
   align-items:stretch;
 }
-main.home div.button button a{
-  display: grid;
-  grid-template-columns: 29px auto 29px;
+main div.button button a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-main.home div.button button {
+main div.button button {
   height: 40px;
   padding: 0 9px;
 }
+main h5{
+  margin-top: 12px;
+  font-size:1rem;
+  padding: 0 10px;
+  text-align: center;
+}
+main article img {
+  width: 90%;
+  display: flex;
+  height: 250px;
+}
 
+main article {
+  width: 90%;
+  max-width: 380px;
+  box-shadow: 5px 5px 10px rgb(177, 148, 113);
+  border-radius: 10px;
+  border-style: inset;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main article img{
+ width: 100%;
+ display: flex;
+
+}
+
+main div.iconos {
+  font-size: 16px;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  text-align: center;
+}
+main div.iconos button {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+}
+@media (min-width:410px){
+  main img{
+    width:100%;
+  }
+}
 @media (min-width:481px) {
-  main.home div.button button {
+  main div.button button {
     padding: 0 20px;
   }
   
+  }
+  @media (min-width: 481px) {
+    main article {
+      width: 80%;
+      height: 50%;
+      padding:20px;
+    }
+    main div.iconos {
+      gap: 10px;
+      width: 100%;
+    }
+    
+  
+    main div.iconos button {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+
+@media (min-width:620px) {
+ 
+  main.home div.image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  main.home div.button{
+    display: flex;
+    flex-direction: row;
+    padding: 0 5px;
+    justify-content: space-around;
+  }
+  main h5{
+    font-size: 20px; 
+  }
+  
+  main.home div.button button {
+ height: auto;
+    padding: 3px ;
+    width: 32%;
+  }
 }
 
 @media(min-width:768px){
+  body{
+    justify-content: inherit;
+  }
+ main.home{
+  padding:30px;
+  font-size: 18px;
+ }
+
  main.home div.image{
   width: 40%;
   height: 40%;
   display: flex;
   justify-content: center;
 }
-
-} 
-
-
-
-
+main div.button{
+  display: flex;
+  flex-direction: row;
+}
+main div.button button{
+  height: 43px;
+  width: 40%;
+}}

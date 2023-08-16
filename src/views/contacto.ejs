@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include("partials/head") %>
+  <body><%- include("partials/header") %>
+    <main class="contacto"> <h5>
+      <% if (locals.user&& user.genero) { %>
+      <%=user.genero=="Mujer"? "Bienvenida":"Bienvenido" %> <%= user.nombre %> 
+      <%} else{ %> 
+        Bienvenid@
+     <% } %> </h5> 
+<form action="/contacto" method="post" >
+ <label for="nombre">ingresa tu nombre</label>
+ <input type="text" class="form-control" name="nombre" id="nombre">
+ <% if (locals.mensajeDeError &&
+        mensajeDeError.nombre ) { %>
+        <p class="error"><%- mensajeDeError.nombre.msg %></p>
+        <% } %>
+ <label for="email">Ingresa tu email</label>
+ <input type="email" id="email" name="email" class="form-control">
+ <% if (locals.mensajeDeError &&
+        mensajeDeError.email ) { %>
+        <p class="error"><%- mensajeDeError.email.msg %></p>
+        <% } %>
+ <label for="comentario"> ingresa tu comentario o duda y alguien de nuestro equipo se comunicara contigo
+</label>
+ <div class="text-btn"><input name="comentario" id="comentario" class="text" type="text"placeholder="Ingresa tu comentario o pregunta"></div>
+ <div class="btn"><button type="submit">Enviar</button>
+ <button type="reset">borrar</button></div></div>
+</form>
+</main>
+     <%- include("partials/footer") %>
+
+  </body>
+</html>

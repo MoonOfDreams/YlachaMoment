@@ -2,7 +2,8 @@ const express = require("express");
 const app = express();
 const router =require("./routers/mainRouters.js");
 const path = require("path");
-const session=require("express-session")
+const session=require("express-session");
+const { Session } = require("inspector");
 app.use(express.static("public"));
 
 app.use(express.urlencoded({extended:false}))
@@ -14,6 +15,12 @@ saveUninitialized: true //  si es falsa,la session cookie no se guarda hasta que
 }))
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "./views"));
+app.use((req,res,next)=>{
+  if(req.session&&req.session.user){
+    res.locals.user=req.session.user
+  } 
+  next()
+})
 app.use(router);
 
 app.listen(3000, () => {

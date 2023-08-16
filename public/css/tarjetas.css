@@ -1,0 +1,25 @@
+
+
+ section.tarjeta{
+    display:none;
+}
+@media (min-width:768px) {
+    section.tarjeta {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+    section.tarjeta article{
+       display: flex;
+       width:40%;
+       margin: 5px;
+       padding: 10px;
+       flex-direction: column;
+       align-items: center;
+   }
+    
+
+}

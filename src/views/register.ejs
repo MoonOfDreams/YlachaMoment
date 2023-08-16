@@ -10,52 +10,70 @@
         method="POST"
         enctype="multipart/form-data"
       >
+      
         <h1>¡Bienvenido a Ylacha Moment!</h1>
         <div class="register">
           <label for="nombre"> ingresa tu nombre:</label>
-          <input  type="text"class= "form-control"
-         
-           
-           value="<%= locals.old && old.nombre?old.nombre:"" %>" name="nombre" id="nombre" />
-          
-           <% if (locals. mensajeDeError &&
-          mensajeDeError.nombre ) { %>
+          <input type="text"class= "form-control" value="<%= locals.old &&
+          old.nombre?old.nombre:"" %>" name="nombre" id="nombre" /> <% if
+          (locals. mensajeDeError && mensajeDeError.nombre ) { %>
           <p class="error" id="error"><%- mensajeDeError.nombre.msg %></p>
           <% } %>
           <label for="apellido">ingresa tu apellido:</label>
-          <input type="text"
-           name="apellido" id="apellido"  value="<%= locals.old && old.apellido?old.apellido:"" %>" 
-       
-           class= "form-control "/>
-          
-           <% if (locals.mensajeDeError
-          && mensajeDeError.apellido ) { %>
-          <p class="error"id="error"><%- mensajeDeError.apellido.msg %></p>
+          <input type="text" name="apellido" id="apellido" value="<%= locals.old
+          && old.apellido?old.apellido:"" %>" class= "form-control "/> <% if
+          (locals.mensajeDeError && mensajeDeError.apellido ) { %>
+          <p class="error" id="error"><%- mensajeDeError.apellido.msg %></p>
 
           <% } %>
 
           <label for="email">Correo electrónico:</label>
-          <input type="email"
-           name="email" id="email"
-           class= "form-control"
-           value="<%= locals.old && old.email?old.email:"" %>"/> 
+          <input type="email" name="email" id="email" class= "form-control"
+          value="<%= locals.old && old.email?old.email:"" %>"/> <% if
+          (locals.mensajeDeError && mensajeDeError.email ) { %>
+          <p class="error" id="error"><%- mensajeDeError.email.msg %></p>
+          <% } %>
+          <div class="genero">
+            <p>ingresa tu genero</p>
+            <% if (locals.mensajeDeError && mensajeDeError.genero) { %>
+            <p class="error" id="error"><%- mensajeDeError.genero.msg %></p>
+            <% } %>
+            <div class="input-label">
+              <input type="radio" name="genero" id="Hombre" value="Hombre"  />
+              <label for="Hombre">Hombre</label></div>
+              
+              <div class="input-label">
+                <input type="radio" name="genero" id="Mujer" value="Mujer" />
+                <label for="Mujer">Mujer</label></div>
+                
+                <div class="input-label">
+                <input
+              type="radio"
+              name="genero"
+              id="no decirlo"
+              value="no decirlo"
+            />
+            <label for="no decirlo">Prefiero no decirlo</label></div>
             
-            <% if (locals.mensajeDeError &&
-          mensajeDeError.email ) { %>
-          <p class="error"id="error"><%- mensajeDeError.email.msg %></p>
-          <% } %>
+          </div>
+
           <label for="password">ingresa tu contraseña:</label>
-          <input type="password" id="password"  class= "form-control " name="password"/> <% if
-          (locals.mensajeDeError && mensajeDeError.password ) { %>
-          <p class="error"id="error"><%- mensajeDeError.password.msg %></p>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            name="password"
+          />
+          <% if (locals.mensajeDeError && mensajeDeError.password ) { %>
+          <p class="error" id="error"><%- mensajeDeError.password.msg %></p>
           <% } %>
-        </div>
+      
         <div class="avatar">
           <label for="avatar">ingresa tu avatar:</label>
           <input type="file" name="avatar" id="avatar" value="<%= locals.old &&
           old.avatar?old.avatar:"" %>" /> <% if (locals.mensajeDeError &&
           mensajeDeError.avatar ) { %>
-          <p class="error"id="error"><%- mensajeDeError.avatar.msg %></p>
+          <p class="error" id="error"><%- mensajeDeError.avatar.msg %></p>
           <% } %>
         </div>
         <div class="date">
@@ -64,9 +82,9 @@
           old.date?old.date:"" %>"/>
         </div>
         <button type="submit">registrarme</button>
-      </form>
-    </main>
-<script src="/js/validaciones.js"></script>
+      </form>  
+   </div> </main>
+    <script src="/js/validaciones.js"></script>
     <%- include("partials/footer") %>
   </body>
 </html>

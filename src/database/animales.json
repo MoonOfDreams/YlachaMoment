@@ -1,31 +1,65 @@
 [
   {
-    "id": 1,
-    "name":"Benji",
+    "id": 0,
+    "name": "Benji",
     "image": "Benji.jpg",
     "type": "perrita de 8 años",
     "sexo": "hembra",
-    "refugio":"pamelita",
+    "animal": "perro",
+    "refugio": "pamelita",
+    "descripcion": "fiel,valiente y unica",
     "historia": "la encontramos cuando estaba preñada a dias de dar a luz, sus cachorros murieron en el parto, pero, se recupero, la castramos y vive como una reyna"
   },
   {
-    "id": 2,
+    "id": 1,
+    "animal": "perro",
     "name": "Lola",
     "image": "bonita.jpg",
     "type": "perrita de 9 meses",
     "sexo": "hembra",
-    "refugio":"las tres hermanas",
-        "descripcion": "enorme cuerpo con alma de caniche",
+    "refugio": "las tres hermanas",
+    "descripcion": "60 kilos de puro amor",
     "historia": "encontrada vagando sin rumbo,laastimada, fue curada y castrada,ahora vive llena de amor"
   },
   {
-    "id": 3,
-    "name":"Bombon",
+    "id": 2,
+    "name": "Bombon",
     "image": "flaca.jpg",
+    "animal": "perro",
     "type": "perrita de 5 años",
     "sexo": "hembra",
-    "refugio":"las renatas",
-    "descripcion": "guerrera de la vida",
+    "refugio": "las renatas",
+    "descripcion": "madre de cualquier cachorro de mi refugio ",
     "historia": "rescatada de un vecino que no la queria y la maltrataba, nos la dio despues de mucha lucha"
+  },
+  {
+    "id": 3,
+    "name": "Simón",
+    "image": "simon.jpg",
+    "type": "gatito de 3 años",
+    "sexo": "macho",
+    "refugio": "gatitos de miel",
+    "descripcion": "haceme un lugarcito en la cama y dejame acurrucarme con vos",
+    "historia": "gatito busca adopcion definitiva luego de estar esperando toda su vida por su oportunidad"
+  },
+  {
+    "id": 4,
+    "name": "Luna",
+    "image": "luna.jpg",
+    "type": "gatita de 2 meses ",
+    "sexo": "hembra",
+    "refugio": "panteritas del sur",
+    "descripcion": "pequeña pero valiente",
+    "historia": "panterita de dos meses busca amor y una familia"
+  },
+  {
+    "id": 5,
+    "name": "Camada lili",
+    "image": "camadaMichi.jpg ",
+    "type": "gatitos de 4 meses",
+    "sexo": "2 machos y 3 hembras",
+    "refugio": "michitos felices",
+    "descripcion": "juntos somos mas fuertes",
+    "historia": "gatitos bicolores buscan hogar definitivo juntos o separados, para transito o amor definitivo"
   }
 ]

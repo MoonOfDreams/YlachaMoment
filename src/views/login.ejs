@@ -5,8 +5,8 @@
   <body>
     <%- include("partials/header") %>
     <main>
-      <div class=" login"><form class="login" action="/login" method="POST">
-        <label for="email">Correo electrónico:</label>
+   <form class="login" action="/login" method="POST">
+  <label for="email">Correo electrónico:</label>
         <input type="email"
          name="email" 
          value="<%= locals.old && old.email?old.email:"" %>"
@@ -22,7 +22,7 @@
         <% } %>
 
         <button type="submit" value="Enviar" >iniciar sesión</button>
-      </form> </div>
+      </form>
     </main>
     <%- include("partials/footer") %>
   </body>

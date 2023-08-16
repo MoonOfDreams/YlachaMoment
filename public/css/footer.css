@@ -1,26 +1,31 @@
 footer {
     margin-top: 15px;
     padding: 15px;
+    display: flex;
+    justify-content: center;   
     background-color: bisque;
-    font-size: 14px;
   }
+  
   
   footer div.lista {
     display: flex;
     flex-direction: column;
   }
-  
   footer div.lista ul {
-    list-style: none;
-    gap: 5px;
+    list-style: none;      
   }
+  
   footer div.lista ul li a {
     color: black;
     text-decoration: none;
     display: flex;
-    font-size: 14px;
+    font-size: 18px;
     list-style: none;
+    padding: 5px;
     gap: 5px;
+  }
+  footer div.lista ul li a:hover {
+    color: rgb(255, 141, 2);
   }
   
   footer div.lista ul.menu li i {
@@ -30,4 +35,38 @@ footer {
   }
   footer div.lista h1 {
     font-size: 15px;
+    text-align: center;
+  }
+  @media (min-width:620px) {
+   
+    footer div.lista h1 {
+      text-align: center;
+      font-size:18px;
+      margin-top: 25px;
+    }
+
+   
+    footer div.lista ul.menu {
+      display: flex;
+      flex-direction: row;
+      padding: 5px;
+  
+    }
+    footer div.lista ul.menu li a{
+     font-size: 14px;
+     height: 35px;
+    
+    }
+    
+    
+  }
+  @media (min-width: 768) {
+    
+    footer div.lista ul.menu li a{
+     font-size: 14px;
+     width: 100%;
+     height: 35px;
+    
+    }
+    
   }

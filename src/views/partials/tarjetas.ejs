@@ -1,0 +1,29 @@
+<section class="tarjeta">
+ 
+    <% animales.forEach((animal, i) => { %>
+    <article> <img src="/img/<%= animal.image %>" alt="First slide" />
+    <div class="datos">
+      <h5 class="importante"><%= animal.name %></h5>
+      <p>
+        Soy <%= animal.sexo =="hembra"?"una "+ animal.type:"un " + animal.type
+        %>
+      </p>
+      <p class="importante"><%= animal.descripcion%></p>
+      <p>Mi refugio: <%= animal.refugio%></p>
+    </div>
+    <div class="iconos">
+      <button>
+        <a href="/detalleMascota"
+          ><i class="fa-solid fa-heart"></i> Conoce sobre mi</a
+        >
+      </button>
+      <button>
+        <a href="/dona"
+          ><i class="fa-solid fa-dollar-sign"></i> Dona a mi refugio</a
+        >
+      </button>
+    </div>
+ </article>
+    <% }) %> 
+
+</section>

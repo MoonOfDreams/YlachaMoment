@@ -3,11 +3,12 @@ const { check, body } = require("express-validator");
 const router = express.Router();
 const controllers = require("../controllers/mainControllers");
 const subirArchivos = require("../middleware/multer");
-const {validaciones, validacionesLogin}=require("../middleware/user")
+const {validaciones,validacionComentarios, validacionesLogin}=require("../middleware/user")
 
 
 router.get("/", controllers.index);
-router.get("/adopta", controllers.adopta);
+router.get("/contacto", controllers.contacto);
+router.post("/contacto",validacionComentarios, controllers.contactarse);
 router.get("/detalleMascota", controllers.detalleMascota);
 router.get("/dona", controllers.dona);
 router.get("/entrada", controllers.entrada);

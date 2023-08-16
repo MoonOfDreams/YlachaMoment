@@ -1,1 +1,20 @@
-[{"nombre":"loli","apellido":"veterinaria","email":"loli@veterinaria.com","password":"123456789","date":"2000-09-23"},{"nombre":"s","apellido":"vazquez","email":"prueba@admin.com","password":"123123123","date":"2000-09-23","avatar":"defaultImage.jpg"},{"nombre":"rosbeliz","apellido":"wantt","email":"prueba@admin.com","password":"Blockazo","date":"2201-05-21","avatar":"defaultImage.jpg"},{"nombre":"Rocío Belén","apellido":"Vázquez","email":"rosbelg15@gmail.com","password":"asdfsdfsdfsad","date":"","avatar":"defaultImage.jpg"}]
+[
+  {
+    "nombre": "Rocio Belen",
+    "apellido": "Vázquez",
+    "email": "rosbelg15@gmail.com",
+    "genero": "Mujer",
+    "password": "Blockazo123",
+    "date": "2022-09-23",
+    "avatar": "defaultImage.jpg"
+  },
+  {
+    "nombre": "jack",
+    "apellido": "Vázquez",
+    "email": "ro@belen.com",
+    "genero": "Mujer",
+    "password": "MoonOfDreams123",
+    "date": "5555-08-04",
+    "avatar": "defaultImage.jpg"
+  }
+]

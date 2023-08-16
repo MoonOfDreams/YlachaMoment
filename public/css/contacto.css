@@ -1,0 +1,35 @@
+
+main form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 6px;
+    width: 90%;
+  padding: 15px;
+  margin-top: 15px;
+  border: 1px solid rgb(255, 141, 2);
+  border-radius: 15px;
+  box-shadow: 10px 15px 25px gray;
+}
+main form input.text{
+    height: 130px;
+    margin-bottom: 10px;
+}
+main form div.text-btn{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+@media (min-width:768px) {
+    main form div.text-btn div.btn{
+        display: flex;
+        gap: 10px;
+    }
+  
+    main form div.text-btn div.btn button{
+     width: 60%;
+     max-width: 350px;
+    }
+  
+}

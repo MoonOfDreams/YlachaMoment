@@ -1,25 +1,39 @@
 main {
   display: flex;
   justify-content: center;
+  
 }
 
-main.register form {
+main.register form.register {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 95%;
-  gap: 5px;
+gap: 5px;
   align-items: center;
+  position: relative;
 }
-main div.login{
+
+
+main form.login{
+  width: 90%;
+  padding: 15px;
+  margin-top: 15px;
+  position: relative;
+  border: 1px solid rgb(255, 141, 2);
+  border-radius: 15px;
+  box-shadow: 10px 15px 25px gray;
+}
+main.register form.register{
   width: 90%;
   padding: 15px;
   margin-top: 15px;
   border: 1px solid rgb(255, 141, 2);
+  
   border-radius: 15px;
-  background-color:rgb(252, 251, 250) ;
-  box-shadow: 10px 15px 25px salmon;
+  box-shadow: 10px 15px 25px gray;
+  
 }
+
 main form.login {
   display: flex;
   gap: 15px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
@@ -33,6 +47,19 @@ main form.login {
 main.register form button {
   background-color: bisque;
 }
+main.register form.register div.register div.genero{
+  display: flex;
+}
+main.register form.register div.register div.genero {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+main.register form.register div.register div.genero div.imput-label{
+  display: flex;
+}
+
+
 main.register form div.register,
 main.register form div.avatar,
 main.register form div.date {
@@ -45,6 +72,8 @@ main.register form div.recordarme,
 main form.login {
   display: flex;
   flex-direction: column;
+  
+  
 }
 @media (min-width: 768px) {
   main.register form,
