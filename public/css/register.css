@@ -9,8 +9,10 @@ main.register form.register {
   flex-direction: column;
   justify-content: center;
 gap: 5px;
+background-color: snow;
   align-items: center;
   position: relative;
+  border: 1px solid var(--azulito);
 }
 
 
@@ -33,6 +35,9 @@ main.register form.register{
   box-shadow: 10px 15px 25px gray;
   
 }
+main form input{
+  border: 1px solid var(--azulito) !important;
+}
 
 main form.login {
   display: flex;
@@ -45,7 +50,7 @@ main form.login {
   font-size: 15px;
 }
 main.register form button {
-  background-color: bisque;
+  background-color: var(--azulito);
 }
 main.register form.register div.register div.genero{
   display: flex;

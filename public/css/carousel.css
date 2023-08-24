@@ -39,6 +39,10 @@ main article {
   }
 }
 @media (min-width: 481px) {
+main div.article{
+display: flex;
+justify-content: center;
+}
   main article {
     width: 80%;
     height: 50%;

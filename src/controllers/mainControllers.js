@@ -10,7 +10,7 @@ module.exports = {
   index: (Req, res) => {
 let databaseJson = fs.readFileSync(animales, { encoding: "utf-8" });
  
-res.render("home", { animales: JSON.parse(databaseJson).slice(0, 4 )});
+res.render("home", { animales: JSON.parse(databaseJson)   });
   },
   contacto: (Req, res) => {
     res.render("contacto");

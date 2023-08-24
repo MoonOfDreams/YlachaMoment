@@ -7,6 +7,9 @@
 @import url("login.css");
 @import url("entrada.css");
 @import url("tarjetas.css");
+:root{
+  --azulito: #22a39f;
+}
 body {
   min-height: 100vh;
   display: flex;
@@ -31,7 +34,7 @@ p.importante {
   height: 50px;
 }
 h5.importante {
-  color: rgb(255, 141, 2);
+  color:var(--azulito);
   font-size: 1.5rem;
 }
 
@@ -40,30 +43,57 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: rgb(255, 141, 2);
+  color:var(--azulito);
   text-decoration: none;
 }
 
 a i {
-  color: rgb(255, 141, 2);
+  color:snow;
   border-radius: 50%;
   padding: 5px;
-  border: 1px solid rgb(255, 141, 2);
+  border: 1px solid snow;
 }
 i {
-  color: rgb(255, 141, 2);
+  color: snow;
   border-radius: 50%;
   padding: 5px;
-  border: 1px solid rgb(255, 141, 2);
+  border: 1px solid snow;
 }
 
 button {
   border-radius: 15px;
   padding: 5px;
-  background-color: bisque;
-  border: 1px solid rgba(255, 141, 3, 0.918);
+  background-color: var(--azulito);
+  border: 1px solid var(--azulito);
 }
+button:hover{
+  border: 1px solid #22a39f;
+  background-color:snow;
+  
+}
+button:hover a, button:hover i{
+  color: #22a39f;
+  border-color: #22a39f;
+}
+@media (min-width:768px) {
+  
+  p.importante {
+    display: none;
+  }
+  a{
+    font-size: 14px;
+  }
+  a i{
+    padding: 5px;
+    border: 1px solid snow;
+  }
+  i {
+    color: snow;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid snow;
+  }
 
-button:hover {
-  color: rgba(255, 141, 3, 0.918);
+
+
 }

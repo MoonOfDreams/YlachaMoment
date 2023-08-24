@@ -4,6 +4,19 @@
     display:none;
 }
 @media (min-width:768px) {
+    main div.iconos {
+        font-size: 16px;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        text-align: center;
+      }
+      main div.iconos button {
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+      }
     section.tarjeta {
         display: flex;
         flex-direction: row;
@@ -14,11 +27,15 @@
     }
     section.tarjeta article{
        display: flex;
-       width:40%;
+       width:220px;
+       height: 450px;
        margin: 5px;
        padding: 10px;
-       flex-direction: column;
        align-items: center;
+   }
+   section.tarjeta article img{
+    width: 200px;
+    height: 200px;    
    }
     
 
