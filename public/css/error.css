@@ -1,0 +1,12 @@
+main{
+    padding:5px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  h4{
+    text-align: center;
+  }
+  img{
+    width:50%;
+  }

@@ -7,6 +7,7 @@
 @import url("login.css");
 @import url("entrada.css");
 @import url("tarjetas.css");
+@import url("error.css");
 :root{
   --azulito: #22a39f;
 }
@@ -21,6 +22,7 @@ body {
 
 p {
   text-align: center;
+  width: 92%;
 }
 p.error {
   text-align: center;
