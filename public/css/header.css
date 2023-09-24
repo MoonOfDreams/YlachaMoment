@@ -2,7 +2,7 @@ header {
   background-color: var(--azulito);
   display: flex;
   flex-direction: column;
-  padding: 8px;
+  padding: 17px;
 }
 
 header div.header {

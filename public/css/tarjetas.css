@@ -28,7 +28,6 @@
     section.tarjeta article{
        display: flex;
        width:220px;
-       height: 450px;
        margin: 5px;
        padding: 10px;
        align-items: center;

@@ -16,8 +16,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: space-between;
-  background-color: rgba(255, 247, 237, 0.856);
+  justify-content: space-between;/* 
+  background-color: rgba(255, 247, 237, 0.856); */
+  background-color: bisque;
 }
 
 p {
@@ -29,7 +30,10 @@ p.error {
   color: red;
   font-size: 14px;
 }
-
+h6,h5{
+  font-size: 1rem;
+  text-align: center;
+}
 p.importante {
   width: 100%;
   overflow: hidden;
@@ -94,8 +98,12 @@ button:hover a, button:hover i{
     border-radius: 50%;
     padding: 5px;
     border: 1px solid snow;
-  }
-
-
+  } 
+   h6{
+    font-size: 2rem;
+   }
+p{
+  font-size: 1.3rem;
+}
 
 }

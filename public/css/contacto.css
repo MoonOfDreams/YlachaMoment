@@ -1,5 +1,5 @@
 
-main form{
+main form.contacto{
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -7,9 +7,11 @@ main form{
     width: 90%;
   padding: 15px;
   margin-top: 15px;
-  border: 1px solid rgb(255, 141, 2);
+  border: 1px solid var(--azulito);
   border-radius: 15px;
   box-shadow: 10px 15px 25px gray;
+  max-width: 640px;
+  max-height: 500px;
 }
 main form input.text{
     height: 130px;

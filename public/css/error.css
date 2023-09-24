@@ -9,4 +9,8 @@ main{
   }
   img{
     width:50%;
+    max-width:350px;
+  }
+  @media (min-width:481px) {
+    
   }

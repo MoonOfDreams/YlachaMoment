@@ -47,6 +47,7 @@ main article {
   width: 90%;
   max-width: 380px;
   box-shadow: 5px 5px 10px rgb(177, 148, 113);
+  background-color: snow;
   border-radius: 10px;
   border-style: inset;
   display: flex;

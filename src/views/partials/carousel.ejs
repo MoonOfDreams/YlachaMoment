@@ -1,52 +1,41 @@
-<section id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <% animales.forEach((animal, i) => { %>
-      <div class="carousel-item <%= i===0?'active':'' %>" >
-        <div class="article">
-          <article>
-            <img src="/img/<%= animal.image %>" alt="First slide" />
-            <div class="datos">
-              <h5 class="importante"><%= animal.name %></h5>
-              <p>
-                Soy <%= animal.sexo =="hembra"?"una "+ animal.type:"un " +
-                animal.type %>
-              </p>
-              <p class="importante"><%= animal.descripcion%></p>
-              <p>Mi refugio: <%= animal.refugio%></p>
-            </div>
-            <div class="iconos">
-              <button>
-                <a href="/detalleMascota"
-                  ><i class="fa-solid fa-heart"></i> Conoce sobre mi</a
-                >
-              </button>
-              <button>
-                <a href="dona"
-                  ><i class="fa-solid fa-dollar-sign"></i> Ayudarme</a
-                >
-              </button>
-            </div>
-          </article>
-        </div>
+<div class="carousel">
+  
+  <div class="carousel-slide">
+    <% animales.forEach((animal, i) => { %>
+    <div class="carousel-item %>">
+      <div class="article">
+        <article>
+          <img src="/img/<%= animal.image %>" alt="First slide" />
+          <div class="datos">
+            <h5 class="importante"><%= animal.name %></h5>
+            <p>
+              Soy <%= animal.sexo =="hembra"?"una "+ animal.type:"un " +
+              animal.type %>
+            </p>
+            <p class="importante"><%= animal.descripcion%></p>
+            <p>Mi refugio: <%= animal.refugio%></p>
+          </div>
+          <div class="iconos">
+            <button>
+              <a href="/detalleMascota"
+                ><i class="fa-solid fa-heart"></i> Conoce sobre mi</a
+              >
+            </button>
+            <button>
+              <a href="dona"
+                ><i class="fa-solid fa-dollar-sign"></i> Ayudarme</a
+              >
+            </button>
+          </div>
+        </article>
       </div>
-      <% }) %>
     </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#carouselExample"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#carouselExample"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-</section>
+    <% }) %>
+  </div>
+<div class="button-container"><button id="prevBtn" class="carousel-button" onclick="changeSlide(-1)">
+  <i class="fa-solid fa-chevron-left"></i>
+  </button><button id="nextBtn" class="carousel-button" onclick="changeSlide(1)">
+    <i class="fa-solid fa-chevron-right"></i> </button></div>
+  
+  <script src="/js/carousel.js"></script>
+</div>
