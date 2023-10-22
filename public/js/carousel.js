@@ -5,7 +5,6 @@ const nextBtn = document.getElementById("nextBtn");
 let currentIndex = 0;
 
 slides[currentIndex].classList.add("active");
-
 function showSlide(index) {
   if (index < 0) {
     currentIndex = slides.length - 1;

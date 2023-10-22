@@ -6,7 +6,6 @@
 
 .carousel-slide {
   flex: 0 0 100%;
-  transition: transform 0.5s;
 }
 .carousel .article{
   display: flex;
@@ -22,29 +21,30 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.carousel .carousel-button {
-  justify-content: center;
-  display: flex;
-  justify-content: center;
-  color: red;
-  cursor: pointer;
+.carousel .button-container button i {
+  font-size: 10px !important;
+  width:20px !important;
+  height: 20px !important;
+}
+main .carousel img{
+  width:90%;
+  max-width:300px;
+  aspect-ratio:1/1; 
 }
 
-.carousel-button:focus {
-  outline: none;
-}
 
 
-section.carousel div.carousel-inner {
+
+.carousel div.carousel-inner {
   display: flex;
   overflow: inherit;
 }
 
-main article {
+main .carousel article {
         max-width: 380px;
         box-shadow: 5px 5px 10px rgb(177, 148, 113);
         border-radius: 10px;
+        width: 94%;
         border-style: inset;
         display: flex;
         padding: 10px;
@@ -58,6 +58,9 @@ main article {
 @media (min-width: 410px) {
   main img {
     width: 100%;
+  }
+  main article{
+    width:90%;
   }
 }
 
